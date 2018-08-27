@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cartas</title>
+  <script src="cartas.js" charset="utf-8"></script>
+  <style media="screen">
+  .caja{
+    width: 100px;
+    height: 139px;
+    margin: 13px;
+    text-align: center;
+    float: left;
+  };
+  </style>
+</head>
+<body>
+<button onclick="mostrar_img()">mostrar_baraja</button>
+<button onclick="generar_baraja()">refrescar baraja</button>
+<br><br>
+<table border="1">
+  <tr>
+  <td><div id="jugadorA">
+    <button onclick="jugar('jugadorA')">cojer carta jugadorA</button>
+    <br>
+  </div></td>
+  <td><div id="jugadorB">
+    <button onclick="jugar('jugadorB')">cojer carta jugadorB</button>
+    <br>
+  </div></td>
+  </tr>
+</table>
+<br>
+<div id="baraja">
+</div>
+
+</body>
+</html>
